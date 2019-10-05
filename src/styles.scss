@@ -1,1 +1,8 @@
 @import "~bulma/bulma";
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -52px;
+    visibility: hidden;
+}
