@@ -7,8 +7,35 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const IsDevelopment = NODE_ENV === 'development';
 
+const cssLoader = {
+    loader: 'css-loader',
+    options: {
+        sourceMap: IsDevelopment
+    }
+};
+
+const postcssLoader = {
+    loader: 'postcss-loader',
+    options: {
+        plugins: function () {
+            return [
+                require('precss'),
+                require('autoprefixer')
+            ];
+        }
+    }
+};
+
+const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+        sourceMap: IsDevelopment
+    }
+};
+
 module.exports = {
     mode: IsDevelopment ? 'development' : 'production',
+    devtool: IsDevelopment ? 'source-map' : undefined,
     entry: './src/index.js',
     optimization: {
         minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
@@ -23,16 +50,9 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true,
-                            // options...
-                        }
-                    }
+                    cssLoader,
+                    postcssLoader,
+                    sassLoader
                 ]
             },
             {
@@ -44,7 +64,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].bundle.css'
+            filename: 'css/bundle.css'
         })
     ]
 };
