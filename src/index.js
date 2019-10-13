@@ -1,5 +1,12 @@
 import 'bootstrap';
+import $ from 'jquery';
 
-require('./styles.scss');
-require('./index.html');
-require('./favicon.png');
+import './styles.scss';
+import './index.html';
+import './favicon.png';
+
+$(document).ready(function () {
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+});
