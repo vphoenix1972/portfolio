@@ -36,7 +36,7 @@ const sassLoader = {
 module.exports = {
     mode: IsDevelopment ? 'development' : 'production',
     devtool: IsDevelopment ? 'source-map' : undefined,
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, 'src/index.js'),
     optimization: {
         minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
@@ -56,8 +56,25 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(html|png)$/,
+                test: path.resolve(__dirname, 'src/index.html'),
+                use: [
+                    'file-loader?name=[name].[ext]',
+                    'extract-loader',
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            attrs: ['img:src']
+                        }
+                    }
+                ]
+            },
+            {
+                test: path.resolve(__dirname, 'src/favicon.ico'),
                 loader: "file-loader?name=[name].[ext]"
+            },
+            {
+                test: /\.(png|jpg|gif|woff|woff2|ttf|svg|eot)$/,
+                loader: "file-loader?name=assets/[name].[ext]"
             }
         ]
     },

@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import './styles.scss';
 import './index.html';
-import './favicon.png';
+import './favicon.ico';
 
 $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
