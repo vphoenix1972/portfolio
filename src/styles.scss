@@ -114,11 +114,19 @@ i, span {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 #sidebar .sidebar-header .photo-collapsed {
     display: none;
+}
+
+#sidebar .sidebar-name {
+    font-size: 1.65em;
+}
+
+#sidebar .sidebar-proffesion {
+    font-size: 1.0em;
 }
 
 #sidebar ul.components {
@@ -132,8 +140,8 @@ i, span {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #007bff;
 }
 #sidebar ul li a i {
     margin-right: 10px;

@@ -79,7 +79,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'css/bundle.css'
         })
