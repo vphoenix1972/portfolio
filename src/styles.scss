@@ -59,8 +59,10 @@ i, span {
 }
 
 #sidebar {
+    position: fixed;
     min-width: 250px;
     max-width: 250px;
+    height: 100%;
     color: #fff;
     transition: all 0.3s;
 }
@@ -151,8 +153,14 @@ i, span {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-    padding: 20px;
+    padding-left: 270px;
+    padding-right: 20px;
     min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#content.active {
+    padding-left: 120px;
     transition: all 0.3s;
 }
 
@@ -162,8 +170,10 @@ i, span {
 ----------------------------------------------------- */
 @media (max-width: 768px) {
     #sidebar {
+        position: fixed;
         min-width: 100px;
         max-width: 100px;
+        height: 100%;
         text-align: center;
         margin-left: -100px !important ;
     }
@@ -212,5 +222,16 @@ i, span {
     }
     #sidebarCollapse span {
         display: none;
+    }
+
+    #content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-height: 400px) {
+    #sidebar.active ul li a {
+        padding: 8px 10px;
     }
 }
