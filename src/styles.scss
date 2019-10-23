@@ -53,11 +53,6 @@ i, span {
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
-.wrapper {
-    display: flex;
-    align-items: stretch;
-}
-
 #sidebar {
     position: fixed;
     min-width: 250px;
@@ -154,14 +149,30 @@ i, span {
 ----------------------------------------------------- */
 #content {
     padding-left: 270px;
-    padding-right: 20px;
-    min-height: 100vh;
     transition: all 0.3s;
 }
 
 #content.active {
     padding-left: 120px;
     transition: all 0.3s;
+}
+
+#content .progress-skill {
+    height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+#content .progress-skill-value {
+    position: absolute;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 15px;
+    color: white;
+}
+
+#content .skill-title {
+    font-size: 18px;
 }
 
 
