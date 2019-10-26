@@ -1,5 +1,6 @@
 import 'bootstrap';
 import $ from 'jquery';
+import '@fortawesome/fontawesome-free/js/all';
 
 import './styles.scss';
 import './index.html';
