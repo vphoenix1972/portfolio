@@ -50,10 +50,9 @@ i, span {
     width: 5%;
 }
 
-// .carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus {
-//     background-color: lightgray;
-//     opacity: 0.5;
-// }
+.clickable {
+    cursor: pointer;
+}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
