@@ -1,11 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-/*
-    DEMO STYLE
-*/
-//@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
 body {
    font-family: sans-serif;
 }
@@ -36,6 +30,30 @@ p {
 i, span {
     display: inline-block;
 }
+
+.carousel {
+    background-color: grey ;
+}
+
+.carousel-inner {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.carousel-caption {
+    bottom: 0;
+    padding: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+// .carousel-control-prev:hover, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-next:focus {
+//     background-color: lightgray;
+//     opacity: 0.5;
+// }
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
