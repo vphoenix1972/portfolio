@@ -1,9 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-   font-family: sans-serif;
-}
-
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -24,7 +20,7 @@ i, span {
 }
 
 .carousel {
-    background-color: grey ;
+    background-color: grey;
 }
 
 .carousel-inner {
@@ -36,6 +32,11 @@ i, span {
 .carousel-caption {
     bottom: 0;
     padding: 0;
+    background-color: $dark;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
 }
 
 .carousel-control-prev, .carousel-control-next {
