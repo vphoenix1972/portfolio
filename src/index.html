@@ -1,108 +1,591 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
 
 <head>
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.bundle.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bundle.css">
 </head>
 
 <body>
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-            </a>
+    <!-- Sidebar Holder -->
+    <nav id="sidebar" class="bg-dark">
+        <div class="sidebar-header">
+            <a href="#">
+                <div class="photo-expanded">
+                    <img src="assets/photo_big.png" />
+                    <div class="mt-2 sidebar-name">Андрей Пономарев</div>
+                    <div class="mt-2 sidebar-proffesion">Full Stack .Net Dev</div>
+                </div>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+                <div class="photo-collapsed">
+                    <img src="assets/photo_small.png" />
+                </div>
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-end is-tab">
-                <a class="navbar-item is-tab" href="#about-me">
+        <ul class="list-unstyled components">
+            <li>
+                <a href="#aboutme">
                     Обо мне
                 </a>
-                <a class="navbar-item" href="#skills">
+            </li>
+            <li>
+                <a href="#skills">
                     Навыки
                 </a>
-                <a class="navbar-item">
+            </li>
+            <li>
+                <a href="#experience">
                     Опыт работы
                 </a>
-                <a class="navbar-item">
-                    Примеры работ
+            </li>
+            <li>
+                <a href="#portfolio">
+                    Портфолио
                 </a>
-                <a class="navbar-item">
+            </li>
+            <li>
+                <a href="#education">
                     Образование
                 </a>
-                <a class="navbar-item">
+            </li>
+            <li>
+                <a href="#contacts">
                     Контакты
                 </a>
-            </div>
-        </div>
+            </li>
+        </ul>
     </nav>
 
-    <div class="container">
+    <!-- Page Content Holder -->
+    <div id="content" class="container-fluid mb-5">
 
-        <h3 class="title is-4 is-spaced">
-            <a id="about-me" class="anchor"></a>
-            <a href="#about-me">#</a>
-            <span>Обо мне</span>
-        </h3>
-        <div class="content">
-            <pre>
-                123
-                123123
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button id="sidebarCollapse" type="button" class="btn btn-light" title="Скрыть / показать навигацию">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </div>
+        </nav>
 
-                123
-                12
-                3
-                123
-                12
-                31
-                23
-                1
-                23
-                1
-                23
-                123
+        <!-- #region AboutMe -->
+        <h2 id="aboutme" class="font-weight-bolder">Обо мне</h2>
+        <hr />
+        <p>
+            Доброго времени суток!
+            <br/>
+            <br/>
+            Меня зовут Андрей Пономарев, я Full stack .NET разработчик из Москвы.
+            <br/>
+            <br/>
+            Более 5 лет я занимаюсь коммерческой разработкой ПО с использованием стека технологий ASP.NET MVC и Javascript.
+            Люблю сложные технические задачи, ведение проекта от начала и до конца, аналитику и проработку требований к разрабатываемому продукту.
+            <br/>
+            В свободное время люблю заниматься самообразованием, расширением и углублением своих проффесиональных навыков, а также спортом.
+            <br/>
+            <br/>
+            Буду рад знакомству и возможности поработать вместе! <i class="far fa-smile-wink"></i>
+        </p>
+        <!-- endregion -->
 
-                213
-            </pre>
+        <!-- #region Skills -->
+        <h2 id="skills" class="font-weight-bolder mt-5">Навыки</h2>
+        <hr />
+
+        <div class="row mt-2">
+
+            <!-- SKILLS - FRONTEND -->
+            <div class="col-sm-6 text-center mb-3">
+                <h4>Frontend</h4>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/angularjs_logo.png" />
+                        </div>
+                        <div class="skill-title">AngularJS</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #DD1B16"
+                                 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">90% (3 года)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/angular_logo.png" />
+                        </div>
+                        <div class="skill-title">Angular</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #DD0330"
+                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">80% (1 год)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/javascript_logo.png" />
+                        </div>
+                        <div class="skill-title">Javascript</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #E7C830"
+                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">70% (4 года)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/html_logo.png" />
+                        </div>
+                        <div class="skill-title">HTML + CSS</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #F16528"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">60% (4 года)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILLS - BACKEND -->
+            <div class="col-sm-6 text-center mb-3">
+                <h4>Backend</h4>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/csharp_logo.png" />
+                        </div>
+                        <div class="skill-title">C#</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #8D50A0"
+                                 aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">90% (5 лет)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/netcore_logo.png" />
+                        </div>
+                        <div class="skill-title">.Net Core</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #5C2D91"
+                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">80% (3 года)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/postgresql_logo.png" />
+                        </div>
+                        <div class="skill-title">PostgreSQL</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #336791"
+                                 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">70% (3 года)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-3">
+                        <div>
+                            <img src="assets/docker_logo.png" />
+                        </div>
+                        <div class="skill-title">Docker</div>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div class="progress progress-skill">
+                            <div class="progress-bar" role="progressbar" style="width: 60%; background-color: #0490BC"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-skill-value">60% (2 года)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-5 mt-2 text-center w-100">
+                <h5>
+                    <span class="badge badge-success">MongoDB</span>
+                    <span class="badge badge-success">Entity Framework Core</span>
+                    <span class="badge badge-warning">Webpack 4</span>
+                    <span class="badge badge-warning">Gulp</span>
+                    <span class="badge badge-warning">Bootstrap</span>
+                    <span class="badge badge-info">xUnit</span>
+                    <span class="badge badge-info">Moq</span>
+                    <span class="badge badge-info">Fluent Assertions</span>
+                    <span class="badge badge-info">Autofixture</span>
+                    <span class="badge badge-dark">WPF</span>
+                    <span class="badge badge-primary">Git</span>
+                    <span class="badge badge-primary">Teamcity</span>
+                    <span class="badge badge-primary">Scrum</span>
+                </h5>
+            </div>
         </div>
 
-        <h3 class="title is-4 is-space">
-            <a id="skills" class="anchor"></a>
-            <a href="#skills">#</a>
-            <span>Навыки</span>
-        </h3>
-        <div class="content">
-            <pre>
-                    123
-                    123123
+        <div class="line"></div>
+        <!-- endregion -->
 
-                    123
-                    12
-                    3
-                    123
-                    12
-                    31
-                    23
-                    1
-                    23
-                    1
-                    23
-                    123
+        <!-- #region Experience -->
+        <h2 id="experience" class="font-weight-bolder mt-5">Опыт работы</h2>
+        <hr />
 
-                    213
-                </pre>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-auto text-center py-2">
+                        <a href="https://ru.visiology.su/" target="_blank">
+                            <img src="assets/visiology_logo.png" />
+                        </a>
+                    </div>
+                    <div class="col-lg-auto">
+                        <h4><a href="https://ru.visiology.su/" target="_blank">ООО Visiology</a></h4>
+                        <span>Senior .Net developer - Март 2014 - по настоящее время</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-auto text-center py-2">
+                        <a href="https://www.polymedia.ru/" target="_blank">
+                            <img src="assets/polymedia_logo.png" />
+                        </a>
+                    </div>
+                    <div class="col-lg-auto">
+                        <h4><a href="https://www.polymedia.ru/" target="_blank">ЗАО Polymedia</a></h4>
+                        <span>C++ developer - Август 2010 - Март 2014</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <!-- endregion -->
+
+        <!-- #region Portfolio -->
+        <h2 id="portfolio" class="font-weight-bolder mt-5">Портфолио</h2>
+        <hr />
+
+        <div class="row justify-content-center">
+            <div class="card m-3" style="width: 18rem;">
+                <img src="assets/viqube-admin_preview.png" class="card-img-top p-2 clickable" data-toggle="modal"
+                     data-target="#viqube-admin">
+                <div class="card-body">
+                    <h5 class="card-title">Visiology Platform - Система администрирования БД ViQube</h5>
+                    <p class="card-text">
+                        Система администрирования предназначается для загрузки данных и настройки схемы данных для
+                        аналитической базы данных ViQube.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card m-3" style="width: 18rem;">
+                <img src="assets/ssbi_preview.png" class="card-img-top p-2 clickable" data-toggle="modal" data-target="#ssbi">
+                <div class="card-body">
+                    <h5 class="card-title">Visiology Platform - Система пользовательской аналитики</h5>
+                    <p class="card-text">
+                        Система пользовательской аналитики предназначается для упрощенного построения отчетов на основе
+                        данных из базы данных ViQube.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card m-3" style="width: 18rem;">
+                <img src="assets/dashboard-designer_preview.png" class="card-img-top p-2 clickable" data-toggle="modal"
+                     data-target="#dashboard-designer">
+                <div class="card-body">
+                    <h5 class="card-title">Visiology Platform - Конструктор дэшбордов</h5>
+                    <p class="card-text">
+                        Конструктор дэшбордов предназначается для создания дэшбордов для отображения данных на веб
+                        страницах сервера визуализации.
+                    </p>
+                </div>
+            </div>
+
+            <div class="modal fade" id="viqube-admin" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Visiology Platform - Система
+                                администрирования БД ViQube</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="bd-example">
+                                <div id="carouselViQubeAdminCaptions" class="carousel slide" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/viqube-admin_1.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Страница редактирования планировщика загрузки данных</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/viqube-admin_2.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Страница настройки загрузчика данных</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/viqube-admin_3.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Страница редактирования колонок таблицы</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/viqube-admin_4.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Страница настройки прав доступа к данным</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev text-dark" href="#carouselViQubeAdminCaptions" role="button"
+                                       data-slide="prev">
+                                        <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                                        <span class="sr-only text-dark">Предидущий</span>
+                                    </a>
+                                    <a class="carousel-control-next text-dark" href="#carouselViQubeAdminCaptions" role="button"
+                                       data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Следующий</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="ssbi" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Visiology Platform - Система
+                                пользовательской аналитики</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="bd-example">
+                                <div id="carouselSsbiCaptions" class="carousel slide" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/ssbi_1.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Главная страница - вкладка линейчатой гистограммы</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/ssbi_2.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Окно применения фильтров из данных графика</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/ssbi_3.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Окно настройки фильтров для данных</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/ssbi_4.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Главная страница - вкладка карты</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev text-dark" href="#carouselSsbiCaptions" role="button"
+                                       data-slide="prev">
+                                        <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                                        <span class="sr-only text-dark">Предидущий</span>
+                                    </a>
+                                    <a class="carousel-control-next text-dark" href="#carouselSsbiCaptions" role="button"
+                                       data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Следующий</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="dashboard-designer" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Visiology Platform - Конструктор дэшбордов</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="bd-example">
+                                <div id="carouselDashboardDesignerCaptions" class="carousel slide" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/dashboard-designer_1.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Конструктор дэшбордов - общий вид интерфейса</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/dashboard-designer_2.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Конструктор дэшбордов - окно списка дэшбордов</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/dashboard-designer_3.png" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Конструктор дэшбордов - окно анализа факторов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev text-dark" href="#carouselDashboardDesignerCaptions"
+                                       role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                                        <span class="sr-only text-dark">Предидущий</span>
+                                    </a>
+                                    <a class="carousel-control-next text-dark" href="#carouselDashboardDesignerCaptions"
+                                       role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Следующий</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- endregion -->
+
+        <!-- #region Education -->
+        <h2 id="education" class="font-weight-bolder mt-5">Образование</h2>
+        <hr />
+
+        <div class="card">
+            <div class="card-body">
+                <h6 class="font-italic">
+                    <u>MongoDB - The Complete Developer's Guide</u>
+                    <a href="https://www.udemy.com/certificate/UC-ISXO5R68/" target="_blank">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </h6>
+                Udemy course - Июнь 2019
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h6 class="font-italic">
+                    <u>C# Mail.ru Test</u>
+                    <a href="https://certification.mail.ru/certificates/f9187261-7804-4131-8fe1-cd92631f407c/" target="_blank">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </h6>
+                Mail.ru certification - Январь 2019
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h6 class="font-italic">
+                    <u>Cambridge English Level 2 Certificate in ESOL International (FCE)</u>
+                    <a href="http://www.languagelink.ru/" target="_blank">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </h6>
+                Language Link - 2016
+            </div>
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h6 class="font-italic">
+                    <u>НИЯУ МИФИ - Московский инженерно-физический институт</u>
+                    <a href="https://mephi.ru/" target="_blank">
+                        <i class="fas fa-link"></i>
+                    </a>
+                </h6>
+                Год окончания - 2012
+            </div>
+        </div>
+        <!-- endregion -->
+
+        <!-- #region Contacts -->
+        <section>
+            <h2 id="contacts" class="font-weight-bolder mt-5">Контакты</h2>
+            <hr />
+
+            <div class="row mt-3 justify-content-center">
+                <div class="col-lg-auto text-center py-2">
+                    <a href="https://github.com/vphoenix1972" target="_blank">
+                        <i class="fab fa-2x fa-github" aria-hidden="true"></i>
+                        <div>github.com/vphoenix1972</div>
+                    </a>
+                </div>
+
+                <div class="col-lg-auto text-center py-2">
+                    <a href="mailto:vphoenix1972@gmail.com">
+                        <i class="fas fa-2x fa-envelope" aria-hidden="true"></i>
+                        <div>vphoenix1972@gmail.com</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- endregion -->
     </div>
 
     <script src="js/bundle.js"></script>

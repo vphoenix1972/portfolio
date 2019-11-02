@@ -7,9 +7,36 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const IsDevelopment = NODE_ENV === 'development';
 
+const cssLoader = {
+    loader: 'css-loader',
+    options: {
+        sourceMap: IsDevelopment
+    }
+};
+
+const postcssLoader = {
+    loader: 'postcss-loader',
+    options: {
+        plugins: function () {
+            return [
+                require('precss'),
+                require('autoprefixer')
+            ];
+        }
+    }
+};
+
+const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+        sourceMap: IsDevelopment
+    }
+};
+
 module.exports = {
     mode: IsDevelopment ? 'development' : 'production',
-    entry: './src/index.js',
+    devtool: IsDevelopment ? 'source-map' : undefined,
+    entry: path.resolve(__dirname, 'src/index.js'),
     optimization: {
         minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
@@ -23,28 +50,37 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
+                    cssLoader,
+                    postcssLoader,
+                    sassLoader
+                ]
+            },
+            {
+                test: path.resolve(__dirname, 'src/index.html'),
+                use: [
+                    'file-loader?name=[name].[ext]',
+                    'extract-loader',
                     {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'sass-loader',
+                        loader: 'html-loader',
                         options: {
-                            sourceMap: true,
-                            // options...
+                            attrs: ['img:src']
                         }
                     }
                 ]
             },
             {
-                test: /\.(html|png)$/,
+                test: path.resolve(__dirname, 'src/favicon.ico'),
                 loader: "file-loader?name=[name].[ext]"
+            },
+            {
+                test: /\.(png|jpg|gif|woff|woff2|ttf|svg|eot)$/,
+                loader: "file-loader?name=assets/[name].[ext]"
             }
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].bundle.css'
+            filename: 'css/bundle.css'
         })
     ]
 };
