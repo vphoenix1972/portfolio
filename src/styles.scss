@@ -52,8 +52,8 @@ i, span {
 ----------------------------------------------------- */
 #sidebar {
     position: fixed;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 275px;
+    max-width: 275px;
     height: 100%;
     color: #fff;
     transition: all 0.3s;
@@ -126,15 +126,16 @@ i, span {
 }
 
 #sidebar .sidebar-proffesion {
-    font-size: 1.0em;
+    font-size: 0.85em;
 }
 
-#sidebar ul.components {
-    padding: 20px 0;
+#sidebar hr {
+    margin: 15px 10px;
+    border-color: #505050;
 }
 
 #sidebar ul li a {
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 1.1em;
     display: block;
 }
@@ -150,7 +151,7 @@ i, span {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-    padding-left: 270px;
+    padding-left: 295px;
     transition: all 0.3s;
 }
 
