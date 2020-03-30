@@ -55,6 +55,7 @@ i, span {
     position: fixed;
     height: 100%;
     color: #fff;
+    background-color: #224b7a;
     transition: all 0.3s;
 
     a, a:hover, a:focus {
@@ -77,7 +78,7 @@ i, span {
 
     hr {
         margin: 15px 10px;
-        border-color: #505050;
+        border-color: #d1d1d1;
     }
 
     ul li a {
@@ -86,7 +87,7 @@ i, span {
 
     ul li a:hover {
         color: #fff;
-        background: #007bff;
+        background: #336791;
     }
 }
 
