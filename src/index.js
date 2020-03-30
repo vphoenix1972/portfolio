@@ -8,7 +8,7 @@ import './favicon.ico';
 
 $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
-        $('#sidebar').toggleClass('active');
-        $('#content').toggleClass('active');
+        $('#sidebar').toggleClass('expanded').toggleClass('collapsed');
+        $('#content').toggleClass('expanded').toggleClass('collapsed');
     });
 });
