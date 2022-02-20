@@ -40,6 +40,22 @@ h6 {
     font-weight: 600; /* Fixes text bold style in IE */
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #336791;
+    border-color: #336791;
+}
+
+.btn-primary:hover {
+    background-color: #224b7a;
+    border-color: #224b7a;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #224b7a;
+    border-color: #224b7a;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */

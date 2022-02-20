@@ -73,7 +73,7 @@ module.exports = {
                 loader: "file-loader?name=[name].[ext]"
             },
             {
-                test: /\.(png|jpg|gif|woff|woff2|ttf|svg|eot)$/,
+                test: /\.(png|jpg|gif|woff|woff2|ttf|svg|eot|pdf)$/,
                 loader: "file-loader?name=assets/[name].[ext]"
             }
         ]
