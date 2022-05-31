@@ -106,6 +106,12 @@ h6 {
             background: #336791;
         }
     }
+
+    .sidebar-language {
+        position: absolute;
+        bottom: 0;
+        padding: 10px 20px;
+    }
 }
 
 #sidebar.expanded {

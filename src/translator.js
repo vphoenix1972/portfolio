@@ -5,12 +5,22 @@ import jqueryI18next from 'jquery-i18next';
 var translations = {
     en: {
         translation: {
-            'about-me': 'About me'
+            'about-me': 'About me',
+            nav: {
+                languageSelector: {
+                    text: 'En'
+                }
+            }
         }
     },
     ru: {
         translation: {
-            'about-me': 'Обо мне'
+            'about-me': 'Обо мне',
+            nav: {
+                languageSelector: {
+                    text: 'Ru'
+                }
+            }
         }
     }
 };
@@ -23,10 +33,16 @@ export function init() {
 
     jqueryI18next.init(i18next, $);
 
+    $('#languageList a').on('click', function () {
+        var locale = $(this).data('locale');
+
+        changeLanguage(locale);
+    });
+
     translatePage();
 }
 
-export function changeLanguage(locale) {
+function changeLanguage(locale) {
     i18next.changeLanguage(locale).then(function () {
         translatePage();
     });
