@@ -5,9 +5,16 @@ import jqueryI18next from 'jquery-i18next';
 var translations = {
     en: {
         translation: {
-            nav: {
-                languageSelector: {
-                    text: 'En'
+            pageTitle: 'Portfolio of Andrey Ponomarev',
+            sidebar: {
+                name: 'Andrey Ponomarev',
+                navLinks: {
+                    aboutMe: 'About me',
+                    skills: 'Skills',
+                    experience: 'Work experience',
+                    portfolio: 'Portfolio',
+                    education: 'Education',
+                    contacts: 'Contacts'
                 }
             },
             content: {
@@ -19,9 +26,16 @@ var translations = {
     },
     ru: {
         translation: {
-            nav: {
-                languageSelector: {
-                    text: 'Ru'
+            pageTitle: 'Портфолио Андрея Пономарева',
+            sidebar: {
+                name: 'Андрей Пономарев',
+                navLinks: {
+                    aboutMe: 'Обо мне',
+                    skills: 'Навыки',
+                    experience: 'Опыт работы',
+                    portfolio: 'Портфолио',
+                    education: 'Образование',
+                    contacts: 'Контакты'
                 }
             },
             content: {
@@ -57,5 +71,5 @@ function changeLanguage(locale) {
 }
 
 function translatePage() {
-    $("body").localize();
+    $("html").localize();
 }
