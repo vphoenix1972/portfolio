@@ -50,6 +50,8 @@ h6 {
     color: #fff;
 
     .sidebar-body {
+        display: flex;
+        flex-direction: column;
         transition: all 0.3s;
         height: 100%;
         background-color: #224b7a;
@@ -107,10 +109,35 @@ h6 {
         }
     }
 
+    .sidebar-gap {
+        flex-grow: 1;
+    }
+
     .sidebar-language {
-        position: absolute;
-        bottom: 0;
+        transition: all 0.3s;
         padding: 10px 20px;
+
+        select {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            option {
+                color: black;
+            }
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        select:focus-visible {
+            outline: none;
+        }
     }
 }
 
@@ -193,6 +220,10 @@ h6 {
         .fa-caret-right {
             display: inline;
         }
+    }
+
+    .sidebar-language {
+        padding: 10px 10px;
     }
 }
 
@@ -281,6 +312,10 @@ h6 {
             ul li a i {
                 font-size: 1.3em;
             }
+        }
+
+        .sidebar-language {
+            padding: 10px 10px;
         }
     }
 

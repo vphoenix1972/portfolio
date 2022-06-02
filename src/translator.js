@@ -5,20 +5,28 @@ import jqueryI18next from 'jquery-i18next';
 var translations = {
     en: {
         translation: {
-            'about-me': 'About me',
             nav: {
                 languageSelector: {
                     text: 'En'
+                }
+            },
+            content: {
+                aboutMe: {
+                    header: 'About me'
                 }
             }
         }
     },
     ru: {
         translation: {
-            'about-me': 'Обо мне',
             nav: {
                 languageSelector: {
                     text: 'Ru'
+                }
+            },
+            content: {
+                aboutMe: {
+                    header: 'Обо мне'
                 }
             }
         }
@@ -27,14 +35,14 @@ var translations = {
 
 export function init() {
     i18next.init({
-        lng: 'ru',
+        lng: 'en',
         resources: translations
     });
 
     jqueryI18next.init(i18next, $);
 
-    $('#languageList a').on('click', function () {
-        var locale = $(this).data('locale');
+    $('#languageSelect').on('change', function () {
+        var locale = this.value;
 
         changeLanguage(locale);
     });
