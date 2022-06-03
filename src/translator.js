@@ -15,6 +15,9 @@ var translations = {
                     portfolio: 'Portfolio',
                     education: 'Education',
                     contacts: 'Contacts'
+                },
+                expandCollapse: {
+                    title: 'Show / Hide navigation'
                 }
             },
             content: {
@@ -55,6 +58,9 @@ var translations = {
                     portfolio: 'Портфолио',
                     education: 'Образование',
                     contacts: 'Контакты'
+                },
+                expandCollapse: {
+                    title: 'Показать / Cкрыть навигацию'
                 }
             },
             content: {
