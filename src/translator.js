@@ -199,6 +199,9 @@ var translations = {
                             issuerAndDate: 'Year of graduation - 2012'
                         }
                     ]
+                },
+                contacts: {
+                    header: 'Contacts'
                 }
             }
         }
@@ -399,6 +402,9 @@ var translations = {
                             issuerAndDate: 'Год окончания - 2012'
                         }
                     ]
+                },
+                contacts: {
+                    header: 'Контакты'
                 }
             }
         }
