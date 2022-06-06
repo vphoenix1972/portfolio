@@ -178,6 +178,27 @@ var translations = {
                             ]
                         }
                     }
+                },
+                education: {
+                    header: 'Education',
+                    awards: [
+                        {
+                            title: 'MongoDB - The Complete Developer\'s Guide',
+                            issuerAndDate: 'Udemy course - June 2019'
+                        },
+                        {
+                            title: 'C# Mail.ru Test',
+                            issuerAndDate: 'Mail.ru certification - January 2019'
+                        },
+                        {
+                            title: 'Cambridge English Level 2 Certificate in ESOL International (FCE)',
+                            issuerAndDate: 'Language Link - 2016'
+                        },
+                        {
+                            title: 'NRNU MEPhI - Moscow Engineering Physics Institute',
+                            issuerAndDate: 'Year of graduation - 2012'
+                        }
+                    ]
                 }
             }
         }
@@ -356,7 +377,28 @@ var translations = {
                                 }
                             ]
                         }
-                    }
+                    }                    
+                },
+                education: {
+                    header: 'Образование',
+                    awards: [
+                        {
+                            title: 'MongoDB - The Complete Developer\'s Guide',
+                            issuerAndDate: 'Udemy course - Июнь 2019'
+                        },
+                        {
+                            title: 'C# Mail.ru Test',
+                            issuerAndDate: 'Mail.ru certification - Январь 2019'
+                        },
+                        {
+                            title: 'Cambridge English Level 2 Certificate in ESOL International (FCE)',
+                            issuerAndDate: 'Language Link - 2016'
+                        },
+                        {
+                            title: 'НИЯУ МИФИ - Московский инженерно-физический институт',
+                            issuerAndDate: 'Год окончания - 2012'
+                        }
+                    ]
                 }
             }
         }
