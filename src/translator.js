@@ -2,6 +2,12 @@ import $ from 'jquery';
 import i18next from 'i18next';
 import jqueryI18next from 'jquery-i18next';
 
+import './assets/viqube-admin_preview_ru.png';
+import './assets/viqube-admin_1_ru.png';
+import './assets/viqube-admin_2_ru.png';
+import './assets/viqube-admin_3_ru.png';
+import './assets/viqube-admin_4_ru.png';
+
 var translations = {
     en: {
         translation: {
@@ -52,21 +58,26 @@ var translations = {
                     viqubeAdmin: {
                         card: {
                             title: 'Visiology Platform - ViQube database administration system',
-                            text: 'The administration system is designed to load data and configure the data scheme for the ViQube analytical database.'
+                            text: 'The administration system is designed to load data and configure the data scheme for the ViQube analytical database.',
+                            previewSrc: 'assets/viqube-admin_preview_en.png'
                         },
                         modal: {
                             title: 'Visiology Platform - ViQube database administration system',
                             images: [
                                 {
+                                    src: 'assets/viqube-admin_1_en.png',
                                     caption: 'Scheduler settings page'
                                 },
                                 {
+                                    src: 'assets/viqube-admin_2_en.png',
                                     caption: 'Data loader settings page'
                                 },
                                 {
+                                    src: 'assets/viqube-admin_3_en.png',
                                     caption: 'Table columns editor page'
                                 },
                                 {
+                                    src: 'assets/viqube-admin_4_en.png',
                                     caption: 'Access rights settings page'
                                 }
                             ]
@@ -255,21 +266,26 @@ var translations = {
                     viqubeAdmin: {
                         card: {
                             title: 'Visiology Platform - Система администрирования БД ViQube',
-                            text: 'Система администрирования предназначается для загрузки данных и настройки схемы данных для аналитической базы данных ViQube.'
+                            text: 'Система администрирования предназначается для загрузки данных и настройки схемы данных для аналитической базы данных ViQube.',
+                            previewSrc: 'assets/viqube-admin_preview_ru.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Система администрирования БД ViQube',
                             images: [
                                 {
+                                    src: 'assets/viqube-admin_1_ru.png',
                                     caption: 'Страница редактирования планировщика загрузки данных'
                                 },
                                 {
+                                    src: 'assets/viqube-admin_2_ru.png',
                                     caption: 'Страница настройки загрузчика данных'
                                 },
                                 {
+                                    src: 'assets/viqube-admin_3_ru.png',
                                     caption: 'Страница редактирования колонок таблицы'
                                 },
                                 {
+                                    src: 'assets/viqube-admin_4_ru.png',
                                     caption: 'Страница настройки прав доступа к данным'
                                 }
                             ]
