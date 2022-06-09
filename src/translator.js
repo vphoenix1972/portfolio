@@ -7,6 +7,11 @@ import './assets/viqube-admin_1_ru.png';
 import './assets/viqube-admin_2_ru.png';
 import './assets/viqube-admin_3_ru.png';
 import './assets/viqube-admin_4_ru.png';
+import './assets/ssbi_preview_ru.png';
+import './assets/ssbi_1_ru.png';
+import './assets/ssbi_2_ru.png';
+import './assets/ssbi_3_ru.png';
+import './assets/ssbi_4_ru.png';
 
 var translations = {
     en: {
@@ -86,21 +91,26 @@ var translations = {
                     ssbi: {
                         card: {
                             title: 'Visiology Platform - Self-service analytics system',
-                            text: 'The self-service analytics system is intended for simplified reporting based on data from the ViQube database.'
+                            text: 'The self-service analytics system is intended for simplified reporting based on data from the ViQube database.',
+                            previewSrc: 'assets/ssbi_preview_en.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Self-service analytics system',
                             images: [
                                 {
+                                    src: 'assets/ssbi_1_en.png',
                                     caption: 'Main page - bar chart tab'
                                 },
                                 {
+                                    src: 'assets/ssbi_2_en.png',
                                     caption: 'Window for applying filters from chart data'
                                 },
                                 {
+                                    src: 'assets/ssbi_3_en.png',
                                     caption: 'Data filter settings window'
                                 },
                                 {
+                                    src: 'assets/ssbi_4_en.png',
                                     caption: 'Home page - map tab'
                                 }
                             ]
@@ -294,21 +304,26 @@ var translations = {
                     ssbi: {
                         card: {
                             title: 'Visiology Platform - Система пользовательской аналитики',
-                            text: 'Система пользовательской аналитики предназначается для упрощенного построения отчетов на основе данных из базы данных ViQube.'
+                            text: 'Система пользовательской аналитики предназначается для упрощенного построения отчетов на основе данных из базы данных ViQube.',
+                            previewSrc: 'assets/ssbi_preview_ru.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Система пользовательской аналитики',
                             images: [
                                 {
+                                    src: 'assets/ssbi_1_ru.png',
                                     caption: 'Главная страница - вкладка линейчатой гистограммы'
                                 },
                                 {
+                                    src: 'assets/ssbi_2_ru.png',
                                     caption: 'Окно применения фильтров из данных графика'
                                 },
                                 {
+                                    src: 'assets/ssbi_3_ru.png',
                                     caption: 'Окно настройки фильтров для данных'
                                 },
                                 {
+                                    src: 'assets/ssbi_4_ru.png',
                                     caption: 'Главная страница - вкладка карты'
                                 }
                             ]
