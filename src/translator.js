@@ -12,6 +12,10 @@ import './assets/ssbi_1_ru.png';
 import './assets/ssbi_2_ru.png';
 import './assets/ssbi_3_ru.png';
 import './assets/ssbi_4_ru.png';
+import './assets/export-import_preview_ru.png';
+import './assets/export-import_1_ru.png';
+import './assets/export-import_2_ru.png';
+import './assets/export-import_3_ru.png';
 
 var translations = {
     en: {
@@ -119,18 +123,22 @@ var translations = {
                     exportImport: {
                         card: {
                             title: 'Visiology Platform - Data migration module',
-                            text: 'The data migration module is used to export/import settings and platform data from one server to another.'
+                            text: 'The data migration module is used to export/import settings and platform data from one server to another.',
+                            previewSrc: 'assets/export-import_preview_en.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Data migration module',
                             images: [
                                 {
+                                    src: 'assets/export-import_1_en.png',
                                     caption: 'Entities for export selection window'
                                 },
                                 {
+                                    src: 'assets/export-import_2_en.png',
                                     caption: 'Window with the final list of exported entities'
                                 },
                                 {
+                                    src: 'assets/export-import_3_en.png',
                                     caption: 'Window with a list of entities to be changed during import'
                                 }
                             ]
@@ -332,18 +340,22 @@ var translations = {
                     exportImport: {
                         card: {
                             title: 'Visiology Platform - Модуль переноса данных',
-                            text: 'Модуль переноса данных используется для экспорта/импорта настроек и данных платформы с одного сервера на другой.'
+                            text: 'Модуль переноса данных используется для экспорта/импорта настроек и данных платформы с одного сервера на другой.',
+                            previewSrc: 'assets/export-import_preview_ru.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Модуль переноса данных',
                             images: [
                                 {
+                                    src: 'assets/export-import_1_ru.png',
                                     caption: 'Окно выбора сущностей для экспорта'
                                 },
                                 {
+                                    src: 'assets/export-import_2_ru.png',
                                     caption: 'Окно с итоговым списком экспортируемых сущностей'
                                 },
                                 {
+                                    src: 'assets/export-import_3_ru.png',
                                     caption: 'Окно со списком изменяемых при импорте сущностей'
                                 }
                             ]
