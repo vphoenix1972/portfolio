@@ -16,6 +16,10 @@ import './assets/export-import_preview_ru.png';
 import './assets/export-import_1_ru.png';
 import './assets/export-import_2_ru.png';
 import './assets/export-import_3_ru.png';
+import './assets/regular-reporting_preview_ru.png';
+import './assets/regular-reporting_1_ru.png';
+import './assets/regular-reporting_2_ru.png';
+import './assets/regular-reporting_3_ru.png';
 
 var translations = {
     en: {
@@ -147,18 +151,22 @@ var translations = {
                     regularReporting: {
                         card: {
                             title: 'Visiology Platform - Regulatory reporting module',
-                            text: 'The regulatory reporting module is used to edit Excel documents created based on data from dashboards.'
+                            text: 'The regulatory reporting module is used to edit Excel documents created based on data from dashboards.',
+                            previewSrc: 'assets/regular-reporting_preview_en.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Regulatory reporting module',
                             images: [
                                 {
+                                    src: 'assets/regular-reporting_1_en.png',
                                     caption: 'Page with a list of regulatory reports'
                                 },
                                 {
+                                    src: 'assets/regular-reporting_2_en.png',
                                     caption: 'Report editing page'
                                 },
                                 {
+                                    src: 'assets/regular-reporting_3_en.png',
                                     caption: 'The window for adding a widget with data to the report'
                                 }
                             ]
@@ -364,18 +372,22 @@ var translations = {
                     regularReporting: {
                         card: {
                             title: 'Visiology Platform - Модуль регламентных отчетов',
-                            text: 'Модуль регламентных отчетов используется для редактирования Excel документов, создаваемых на основе данных из дэшбордов.'
+                            text: 'Модуль регламентных отчетов используется для редактирования Excel документов, создаваемых на основе данных из дэшбордов.',
+                            previewSrc: 'assets/regular-reporting_preview_ru.png'
                         },
                         modal: {
                             title: 'Visiology Platform - Модуль регламентных отчетов',
                             images: [
                                 {
+                                    src: 'assets/regular-reporting_1_ru.png',
                                     caption: 'Страница со списком регламентных отчетов'
                                 },
                                 {
+                                    src: 'assets/regular-reporting_2_ru.png',
                                     caption: 'Страница редактирования отчета'
                                 },
                                 {
+                                    src: 'assets/regular-reporting_3_ru.png',
                                     caption: 'Окно добавления виджета с данными в отчет'
                                 }
                             ]
