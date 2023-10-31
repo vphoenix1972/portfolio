@@ -1,8 +1,8 @@
 const path = require('path');
 const TerserJSPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const IsDevelopment = NODE_ENV === 'development';
@@ -17,11 +17,13 @@ const cssLoader = {
 const postcssLoader = {
     loader: 'postcss-loader',
     options: {
-        plugins: function () {
-            return [
-                require('precss'),
-                require('autoprefixer')
-            ];
+        postcssOptions: {
+            plugins: function () {
+                return [
+                    require('precss'),
+                    require('autoprefixer')
+                ];
+            }
         }
     }
 };
@@ -38,11 +40,12 @@ module.exports = {
     devtool: IsDevelopment ? 'source-map' : undefined,
     entry: path.resolve(__dirname, 'src/index.js'),
     optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+        minimizer: [new TerserJSPlugin({}), new CssMinimizerPlugin({})],
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/bundle.js'
+        filename: 'js/bundle.js',
+        assetModuleFilename: path.join('assets', '[name][ext]')
     },
     module: {
         rules: [
@@ -56,29 +59,25 @@ module.exports = {
                 ]
             },
             {
-                test: path.resolve(__dirname, 'src/index.html'),
-                use: [
-                    'file-loader?name=[name].[ext]',
-                    'extract-loader',
-                    {
-                        loader: 'html-loader',
-                        options: {
-                            attrs: ['img:src']
-                        }
-                    }
-                ]
-            },
-            {
                 test: path.resolve(__dirname, 'src/favicon.ico'),
-                loader: "file-loader?name=[name].[ext]"
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]'
+                    }
+                }
             },
             {
                 test: /\.(png|jpg|gif|woff|woff2|ttf|svg|eot)$/,
-                loader: "file-loader?name=assets/[name].[ext]"
+                type: 'asset/resource'
             }
         ]
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'src/index.html'),
+            filename: 'index.html'
+        }),
         new MiniCssExtractPlugin({
             filename: 'css/bundle.css'
         })

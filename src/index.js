@@ -4,7 +4,6 @@ import $ from 'jquery';
 import '@fortawesome/fontawesome-free/js/all';
 
 import './styles.scss';
-import './index.html';
 import './favicon.ico';
 import * as translator from './translator';
 
