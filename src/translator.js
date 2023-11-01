@@ -42,7 +42,7 @@ var translations = {
             content: {
                 aboutMe: {
                     header: 'About me',
-                    text: 'Good day!\n\nMy name is Andrey Ponomarev, I am a Full stack .NET developer from Moscow.\n\nFor more than 6 years I have been engaged in commercial software development using the ASP.NET MVC and Javascript technology stack.\nI love complex technical tasks, project management from start to end, analytics and elaboration of requirements for the product being developed.\n\nIn my free time I like to engage in self-education, expanding and deepening my professional skills, as well as sports.'
+                    text: 'Good day!\n\nMy name is Andrey Ponomarev, I am a Senior .NET developer from Moscow.\n\nFor more than 6 years I have been engaged in commercial software development using the C#, .NET Core and Javascript technology stack.\nI love complex technical tasks, project management from start to end, system analytics and elaboration of requirements for the product being developed.\n\nIn my free time I like to engage in self-education, expanding and deepening my professional skills, as well as sports.'
                 },
                 skills: {
                     header: 'Skills',
@@ -263,7 +263,7 @@ var translations = {
             content: {
                 aboutMe: {
                     header: 'Обо мне',
-                    text: 'Доброго времени суток!\n\nМеня зовут Андрей Пономарев, я Full stack .NET разработчик из Москвы.\n\nБолее 6 лет я занимаюсь коммерческой разработкой ПО с использованием стека технологий ASP.NET MVC и Javascript.\nЛюблю сложные технические задачи, ведение проекта от начала и до конца, аналитику и проработку требований к разрабатываемому продукту.\n\nВ свободное время люблю заниматься самообразованием, расширением и углублением своих проффесиональных навыков, а также спортом.'
+                    text: 'Доброго времени суток!\n\nМеня зовут Андрей Пономарев, я Senior .NET разработчик из Москвы.\n\nБолее 6 лет я занимаюсь коммерческой разработкой ПО с использованием стека технологий C#, .NET Core и Javascript.\nЛюблю сложные технические задачи, ведение проекта от начала и до конца, системную аналитику и проработку требований к разрабатываемому продукту.\n\nВ свободное время люблю заниматься самообразованием, расширением и углублением своих проффесиональных навыков, а также спортом.'
                 },
                 skills: {
                     header: 'Навыки',

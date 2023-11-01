@@ -265,6 +265,12 @@ h6 {
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media (min-width: 576px) {
+    .modal-xl {
+        max-width: 87%;
+    }
+}
+
 @media (max-width: 768px) {
     #sidebar {
         .sidebar-body {
