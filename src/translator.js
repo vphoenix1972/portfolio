@@ -62,11 +62,40 @@ var translations = {
                         position: 'C ++ developer - August 2010 - March 2014'
                     }
                 },
-                portfolio : {
+                portfolio: {
                     header: 'Portfolio',
                     modal: {
                         previousImage: 'Previous',
                         nextImage: 'Next'
+                    },
+                    visiology3: {
+                        card: {
+                            title: 'Visiology Platform 3 - Formula Engine',
+                            text: 'Formula Engine is a key component of the Visiology 3 platform, designed to execute DAX expressions in conjunction with the Clickhouse database.'
+                        },
+                        modal: {
+                            title: 'Visiology Platform 3 - Formula Engine',
+                            images: [
+                                {
+                                    caption: 'Formula Engine - an implementation of a backend for building charts based on DAX queries'
+                                },
+                                {
+                                    caption: 'Formula Engine - an implementation of a parser and semantic analyzer for DAX expressions'
+                                },
+                                {
+                                    caption: 'Formula Engine - an implementation of a backend for storing the data model (1) and the relationships between tables (2)'
+                                },
+                                {
+                                    caption: 'Formula Engine - an example of parsing a DAX expression into a syntax tree'
+                                },
+                                {
+                                    caption: 'Formula Engine - an implementation of a backend for storing and administering datasets'
+                                },
+                                {
+                                    caption: 'Formula Engine - an implementation of a backend for storing and administering workspaces'
+                                }
+                            ]
+                        }
                     },
                     viqubeAdmin: {
                         card: {
@@ -283,11 +312,40 @@ var translations = {
                         position: 'C++ developer - Август 2010 - Март 2014'
                     }
                 },
-                portfolio : {
+                portfolio: {
                     header: 'Портфолио',
                     modal: {
                         previousImage: 'Предидущий',
                         nextImage: 'Следующий'
+                    },
+                    visiology3: {
+                        card: {
+                            title: 'Visiology Platform 3 - Formula Engine',
+                            text: 'Formula Engine это ключевой компонент платформы Visiology 3, предназначенный для выполнения выражений на языке DAX в связке с СУБД Clickhouse.'
+                        },
+                        modal: {
+                            title: 'Visiology Platform 3 - Formula Engine',
+                            images: [
+                                {
+                                    caption: 'Formula Engine - реализация backend для построения графиков на основе запросов DAX'
+                                },
+                                {
+                                    caption: 'Formula Engine - реализация парсера и семантического анализа выражений на языке DAX'
+                                },
+                                {
+                                    caption: 'Formula Engine - реализация backend для хранения модели данных (1) и связей между таблицами (2)'
+                                },
+                                {
+                                    caption: 'Formula Engine - пример разбора выражения на языке DAX в синтаксическое дерево'
+                                },
+                                {
+                                    caption: 'Formula Engine - реализация backend для хранения и администрирования наборов данных'
+                                },
+                                {
+                                    caption: 'Formula Engine - реализация backend для хранения и администрирования рабочих областей'
+                                }
+                            ]
+                        }
                     },
                     viqubeAdmin: {
                         card: {
@@ -435,7 +493,7 @@ var translations = {
                                 }
                             ]
                         }
-                    }                    
+                    }
                 },
                 education: {
                     header: 'Образование',

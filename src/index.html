@@ -102,6 +102,17 @@
 
         <div class="row justify-content-center">
             <div class="card m-3" style="width: 18rem;">
+                <img src="<%= require('./assets/visiology3_preview.png') %>" class="card-img-top p-2 clickable" data-toggle="modal"
+                     data-target="#visiology3">
+                <div class="card-body">
+                    <h5 class="card-title" data-i18n="content.portfolio.visiology3.card.title">Visiology Platform 3 - Formula Engine</h5>
+                    <p class="card-text" data-i18n="content.portfolio.visiology3.card.text">
+                        Formula Engine is a key component of the Visiology 3 platform, designed to execute DAX expressions in conjunction with the Clickhouse database.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card m-3" style="width: 18rem;">
                 <img src="<%= require('./assets/viqube-admin_preview_en.png') %>" class="card-img-top p-2 clickable" data-toggle="modal"
                      data-target="#viqube-admin" data-i18n="[src]content.portfolio.viqubeAdmin.card.previewSrc">
                 <div class="card-body">
@@ -164,6 +175,74 @@
                     <p class="card-text" data-i18n="content.portfolio.flipbox.card.text">
                         Flipbox Software Suite is interactive display software with drawing, video conferencing and laptop or smartphone screen display functions.
                     </p>
+                </div>
+            </div>
+
+            <div class="modal fade" id="visiology3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" data-i18n="content.portfolio.visiology3.modal.title">Visiology Platform 3 - Formula Engine</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="bd-example">
+                                <div id="carouselVisiology3Captions" class="carousel slide" data-ride="carousel"
+                                     data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="<%= require('./assets/visiology3_1.png') %>" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p data-i18n="content.portfolio.visiology3.modal.images.0.caption">Formula Engine - implementation of a backend for storing and administering workspaces (1)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<%= require('./assets/visiology3_2.png') %>" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p data-i18n="content.portfolio.visiology3.modal.images.1.caption">Formula Engine - implementation of a backend for storing and administering datasets (1)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<%= require('./assets/visiology3_3.png') %>" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p data-i18n="content.portfolio.visiology3.modal.images.2.caption">Formula Engine - implementation of a backend for building charts based on DAX queries (1)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<%= require('./assets/visiology3_4.png') %>" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p data-i18n="content.portfolio.visiology3.modal.images.3.caption">Formula Engine - implementation of a backend for storing the data model (1) and the relationships between tables (2)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<%= require('./assets/visiology3_5.png') %>" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p data-i18n="content.portfolio.visiology3.modal.images.4.caption">Formula Engine - an implementation of a parser and semantic analyzer for DAX expressions (1)</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<%= require('./assets/visiology3_6.png') %>" class="d-block w-100">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p data-i18n="content.portfolio.visiology3.modal.images.5.caption">Formula Engine - an example of parsing a DAX expression into a syntax tree</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev text-dark" href="#carouselVisiology3Captions" role="button"
+                                       data-slide="prev">
+                                        <span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+                                        <span class="sr-only text-dark" data-i18n="content.portfolio.modal.previousImage">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next text-dark" href="#carouselVisiology3Captions" role="button"
+                                       data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only" data-i18n="content.portfolio.modal.nextImage">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
