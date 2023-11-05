@@ -46,10 +46,10 @@ var translations = {
                 },
                 skills: {
                     header: 'Skills',
-                    angularJsProgressText: '90% (4 years)',
-                    angularProgressText: '80% (2 years)',
-                    csharpProgressText: '90% (more than 6 years)',
-                    netCoreProgressText: '80% (more than 6 years)'
+                    angularJsProgressText: '4 years of experience',
+                    angularProgressText: '2 years of experience',
+                    csharpProgressText: 'more than 6 years of experience',
+                    netCoreProgressText: 'more than 6 years of experience'
                 },
                 experience: {
                     header: 'Work experience',
@@ -296,10 +296,10 @@ var translations = {
                 },
                 skills: {
                     header: 'Навыки',
-                    angularJsProgressText: '90% (4 года)',
-                    angularProgressText: '80% (2 года)',
-                    csharpProgressText: '90% (более 6 лет)',
-                    netCoreProgressText: '80% (более 6 лет)'
+                    angularJsProgressText: '4 года опыта работы',
+                    angularProgressText: '2 года опыта работы',
+                    csharpProgressText: 'более 6 лет опыта работы',
+                    netCoreProgressText: 'более 6 лет опыта работы'
                 },
                 experience: {
                     header: 'Опыт работы',
