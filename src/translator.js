@@ -53,9 +53,13 @@ var translations = {
                 },
                 experience: {
                     header: 'Work experience',
+                    megapolisit: {
+                        companyName: 'Megapolis IT Limited',
+                        position: 'Senior .Net developer - December 2023 - present'
+                    },
                     visiology: {
                         companyName: 'Visiology Limited',
-                        position: 'Senior .Net developer - March 2014 - present'
+                        position: 'Senior .Net developer - March 2014 - December 2023'
                     },
                     polymedia: {
                         companyName: 'Polymedia JSC',
@@ -303,9 +307,13 @@ var translations = {
                 },
                 experience: {
                     header: 'Опыт работы',
+                    megapolisit: {
+                        companyName: 'ООО Мегаполис Информационные Технологии',
+                        position: 'Senior .Net developer - Декабрь 2023 - по настоящее время'
+                    },
                     visiology: {
                         companyName: 'ООО Visiology',
-                        position: 'Senior .Net developer - Март 2014 - по настоящее время'
+                        position: 'Senior .Net developer - Март 2014 - Декабрь 2023'
                     },
                     polymedia: {
                         companyName: 'ЗАО Polymedia',
